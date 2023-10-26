@@ -12,6 +12,11 @@ https://github.com/satoshiokue/EMUZ80-Z8/tree/main
 
 アセンブラ Macro Assembler 1.42  
 
+
+FOR命令、GOSUB命令でスタック上の変数領域を節約するためPUSHしたあとにINC SPを実行して1バイトのブロックマーカーを格納していました。Z8のPUSH/POPは1バイト単位なのでブロックマーカーだけをPUSH/POPするように変更しました。    
+
+IN命令、OUT命令は無効にしました。 
+
 BASICのMONITOR命令で0000hへジャンプします。
 
 # メモリーマップ
@@ -25,11 +30,6 @@ E001H UART Control Registor
 
 UART通信のルーチンはUniversal MonitorのSBZ8用を流用しました。  
 https://electrelic.com/electrelic/node/1317  
-
-FOR命令、GOSUB命令でスタック上の変数領域を節約するためPUSHしたあとにINC SPを実行して1バイトのブロックマーカーを格納していました。Z8のPUSH/POPは1バイト単位なのでブロックマーカーだけをPUSH/POPするように変更しました。    
-
-IN命令、OUT命令は無効にしました。  
-
 ```
 ——————————————————
 レジスタ対応
