@@ -4,11 +4,11 @@ Nascom BASICはマイクロソフトが作成し、Grant Searleさんがサブ�
 
 ファイルは原作者の宣言にしたがってご利用ください。  
 
-https://github.com/vintagechips/emuz80/tree/main  
+https://github.com/vintagechips/emuz80/  
 こちらのemuz80/examples/EMUBASIC/にあるEMUBASIC.ASM ソースコードを元にしてコード変換を行いました。
 
 ターゲット EMUZ80-Z8 / MEZZ8  
-https://github.com/satoshiokue/EMUZ80-Z8/tree/main  
+https://github.com/satoshiokue/EMUZ80-Z8/  
 
 アセンブラ Macro Assembler 1.42  
 
